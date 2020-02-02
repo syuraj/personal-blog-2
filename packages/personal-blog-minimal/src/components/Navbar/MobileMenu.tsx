@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import { Link } from "gatsby"
-import Drawer from "components/Drawer/drawer"
+import Drawer from "components/Drawer/Drawer"
 import { DrawerContext } from "components/Drawer/DrawerContext"
 import Menu from "./Menu"
 import {
