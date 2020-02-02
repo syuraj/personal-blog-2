@@ -3,7 +3,6 @@ import Sticky from "react-stickynode"
 import { ThemeProvider } from "styled-components"
 import ScrollToTop from "react-scroll-up"
 import Navbar from "./Navbar/navbar"
-import Newsletter from "./Newsletter/newsletter"
 import Footer from "./Footer/footer"
 import ScrollUpButton from "./ScrollUpButton/scrollUpButton"
 import InstagramShowcase from "../containers/InstagramShowcase"
@@ -26,7 +25,6 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
         {children}
 
         {process.env.INSTAGRAM_TOKEN == "" ? "" : <InstagramShowcase />}
-        <Newsletter />
         <Footer>
           Copyright &copy; {new Date().getFullYear()}
           <a href="https://redq.io/"> RedQ, Inc.</a>

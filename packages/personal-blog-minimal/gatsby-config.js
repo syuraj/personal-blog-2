@@ -115,12 +115,6 @@ module.exports = {
       resolve: `gatsby-plugin-lodash`,
     },
     {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-        endpoint: '',
-      },
-    },
-    {
       resolve: `gatsby-source-instagram`,
       options: {
         // username: ,
