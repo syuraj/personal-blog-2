@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { MenuItemWrapper, MenuItem } from "./navbar.style"
+import { MenuItemWrapper, MenuItem } from "./Navbar.style"
 
 type MenuProps = {
   items: MenuItemsProps[]
