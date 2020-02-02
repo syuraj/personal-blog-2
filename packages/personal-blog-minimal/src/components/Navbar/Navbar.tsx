@@ -13,7 +13,7 @@ import HeaderWrapper, {
   NavSearchWrapper,
   SearchCloseButton,
   NavSearchFromWrapper,
-} from "./navbar.style"
+} from "./Navbar.style"
 import LogoImage from "../../images/logo.png"
 
 type NavbarProps = {
