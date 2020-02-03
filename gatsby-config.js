@@ -6,8 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Suraj`,
     author: `Suraj`,
-    about: `Breakfast procuring no end happiness allowance assurance frank. Met simplicity nor difficulty unreserved who. Entreaties mr conviction dissimilar me
-    astonished estimating cultivated.`,
+    about: `A Tech Enthusiast. Exploring new ways to implement tech on daily lives. Passionate on JavaScript, .Net, Java, Python, Machine Learning.`,
     description: `A Personal Blog`,
     siteUrl: `https://https://surajshrestha.netlify.com`,
   },
