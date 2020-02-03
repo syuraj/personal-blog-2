@@ -1,16 +1,15 @@
 {
-  "name": "personal-blog-minimal",
+  "name": "suraj-shrestha-blog",
   "private": true,
-  "description": "",
+  "description": "a tech blog",
   "version": "1.2.0",
-  "author": "RedQ Team",
+  "author": "Suraj Shrestha",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "now-build": "yarn run build",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
@@ -78,7 +77,6 @@
     "@types/yup": "^0.26.13",
     "prettier": "^1.17.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
     "gatsby"
   ],
@@ -86,7 +84,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/syuraj/surajshrestha.git"
   },
   "husky": {
     "hooks": {
