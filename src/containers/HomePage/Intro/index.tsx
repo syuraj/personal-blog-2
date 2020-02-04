@@ -10,6 +10,7 @@ import {
   IntroInfo,
 } from "./style"
 import {
+  IoLogoLinkedin,
   IoLogoFacebook,
   IoLogoTwitter,
   IoLogoInstagram,
@@ -19,6 +20,11 @@ import {
 type IntroProps = {}
 
 const SocialLinks = [
+  {
+    icon: <IoLogoLinkedin />,
+    url: "https://www.linkedin.com/in/surajshrestha/",
+    tooltip: "Linked In",
+  },
   {
     icon: <IoLogoFacebook />,
     url: "https://www.facebook.com/surajside",

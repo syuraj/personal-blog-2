@@ -5,7 +5,6 @@ import ScrollToTop from "react-scroll-up"
 import Navbar from "./Navbar/Navbar"
 import Footer from "./Footer/Footer"
 import ScrollUpButton from "./ScrollUpButton/ScrollUpButton"
-import InstagramShowcase from "../containers/InstagramShowcase"
 import ResetCss from "./resetCSS"
 import { theme } from "../theme"
 
@@ -24,10 +23,8 @@ const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
 
         {children}
 
-        {process.env.INSTAGRAM_TOKEN == "" ? "" : <InstagramShowcase />}
         <Footer>
-          Copyright &copy; {new Date().getFullYear()}
-          <a href="https://redq.io/"> RedQ, Inc.</a>
+          Copyright &copy; {new Date().getFullYear()}, Suraj Shrestha
         </Footer>
         <ScrollToTop
           showUnder={300}

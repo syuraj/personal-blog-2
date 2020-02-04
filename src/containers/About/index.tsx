@@ -16,6 +16,7 @@ import {
   AboutDetails,
   SocialProfiles,
 } from "./style"
+import InstagramShowcase from "../InstagramShowcase"
 
 const SocialLinks = [
   {
@@ -87,6 +88,7 @@ const About: React.FunctionComponent<AboutProps> = props => {
           <SocialProfile items={SocialLinks} />
         </SocialProfiles>
       </AboutDetails>
+      {process.env.INSTAGRAM_TOKEN == "" ? "" : <InstagramShowcase />}
     </AboutWrapper>
   )
 }
