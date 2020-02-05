@@ -5,11 +5,10 @@
   "version": "1.2.0",
   "author": "Suraj Shrestha",
   "scripts": {
+    "start": "gatsby develop",
     "build": "gatsby build",
-    "dev": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
-    "start": "npm run develop",
     "serve": "gatsby serve",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
