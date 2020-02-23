@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import PostCardMinimal from '../../../components/PostCardMinimal/postCardMinimal'
-import Pagination from '../../../components/Pagination/pagination'
+import { PaginationWrapper } from '../../../components/Pagination/pagination.style'
 import BlogPostsWrapper, { SecTitle } from './style'
 
 type PostsProps = {}
@@ -50,8 +50,6 @@ const Posts: React.FunctionComponent<PostsProps> = (props) => {
 	`)
 
 	const Posts = Data.allMarkdownRemark.edges
-	const TotalPage = Data.allSitePage.nodes[0].context.numPages
-	const CurrentPage = Data.allSitePage.nodes[0].context.currentPage
 
 	return (
 		<BlogPostsWrapper>
@@ -71,7 +69,10 @@ const Posts: React.FunctionComponent<PostsProps> = (props) => {
 				)
 			})}
 
-			{TotalPage >> 1 ? <Pagination nextLink="/page/2" currentPage={CurrentPage} totalPage={TotalPage} /> : ''}
+			<PaginationWrapper>
+				<div></div>
+				<Link to="/blog">More</Link>
+			</PaginationWrapper>
 		</BlogPostsWrapper>
 	)
 }
