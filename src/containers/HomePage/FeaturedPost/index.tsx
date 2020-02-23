@@ -9,20 +9,11 @@ type FeaturedPostsProps = {}
 const FeaturedPosts: React.FunctionComponent<FeaturedPostsProps> = (props) => {
 	const Data = useStaticQuery(graphql`
 		query {
-			site {
-				siteMetadata {
-					title
-				}
-			}
-			allSitePage(filter: { path: { eq: "/page/1" } }) {
-				nodes {
-					context {
-						numPages
-						currentPage
-					}
-				}
-			}
-			allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 4	) {
+			allMarkdownRemark(
+				sort: { fields: [frontmatter___date], order: DESC }
+				limit: 4
+				filter: { frontmatter: { tags: { eq: "featured-project" } } }
+			) {
 				totalCount
 				edges {
 					node {

@@ -2,7 +2,7 @@
 title: NepalToday - latest news from Nepal
 date: '2020-02-22'
 cover: './preview.jpg'
-tags: ['NepalToday', 'Nepal News', 'Nepal politics', 'Nepal celebrities', 'react-native', 'graphql']
+tags: ['NepalToday', 'Nepal News', 'Nepal politics', 'Nepal celebrities', 'react-native', 'graphql', 'featured-project']
 ---
 
 ### Download from Google Play
