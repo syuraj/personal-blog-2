@@ -22,7 +22,7 @@ const Posts: React.FunctionComponent<PostsProps> = (props) => {
 					}
 				}
 			}
-			allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 5) {
+			allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 2) {
 				totalCount
 				edges {
 					node {
@@ -55,7 +55,7 @@ const Posts: React.FunctionComponent<PostsProps> = (props) => {
 
 	return (
 		<BlogPostsWrapper>
-			<SecTitle>Latest Stories</SecTitle>
+			<SecTitle>Latest Posts</SecTitle>
 			{Posts.map(({ node }: any) => {
 				const title = node.frontmatter.title || node.fields.slug
 				return (

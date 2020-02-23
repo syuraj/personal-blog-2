@@ -22,7 +22,7 @@ const FeaturedPosts: React.FunctionComponent<FeaturedPostsProps> = (props) => {
 					}
 				}
 			}
-			allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 6) {
+			allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 4	) {
 				totalCount
 				edges {
 					node {
