@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
+import { IoMdArrowRoundForward } from 'react-icons/io'
 import PostCardMinimal from '../../../components/PostCardMinimal/postCardMinimal'
-import { PaginationWrapper } from '../../../components/Pagination/pagination.style'
+import { PaginationWrapper, NextPage } from '../../../components/Pagination/pagination.style'
 import BlogPostsWrapper, { SecTitle } from './style'
 
 type PostsProps = {}
@@ -71,7 +72,11 @@ const Posts: React.FunctionComponent<PostsProps> = (props) => {
 
 			<PaginationWrapper>
 				<div></div>
-				<Link to="/blog">More</Link>
+				<NextPage>
+					<Link to="/blog" aria-label="More">
+						<IoMdArrowRoundForward />
+					</Link>
+				</NextPage>
 			</PaginationWrapper>
 		</BlogPostsWrapper>
 	)
