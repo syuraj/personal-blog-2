@@ -9,7 +9,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -95,7 +96,7 @@
   },
   "lint-staged": {
     "*.{js,md,css}": [
-      "prettier --trailing-comma es5 --single-quote --write",
+      "prettier --write",
       "git add"
     ]
   },

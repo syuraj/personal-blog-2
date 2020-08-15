@@ -13,40 +13,40 @@ There’s so many poorly chosen words in that sentence. Now, when you do this wi
 
 ```js
 <PostDetails className="post_details">
-  <PostMeta>
-    {tags == null || overlay == true ? null : (
-      <PostTags className="post_tags">
-        {tags.map((tag: string, index: number) => (
-          <Link key={index} to={`/tags/${_.kebabCase(tag)}/`}>
-            {`#${tag}`}
-          </Link>
-        ))}
-      </PostTags>
-    )}
-  </PostMeta>
+	<PostMeta>
+		{tags == null || overlay == true ? null : (
+			<PostTags className="post_tags">
+				{tags.map((tag: string, index: number) => (
+					<Link key={index} to={`/tags/${_.kebabCase(tag)}/`}>
+						{`#${tag}`}
+					</Link>
+				))}
+			</PostTags>
+		)}
+	</PostMeta>
 
-  <PostTitle className="post_title">
-    <Link to={url}>{title}</Link>
-  </PostTitle>
-  {overlay == true ? (
-    ''
-  ) : (
-    <>
-      {' '}
-      {description && (
-        <Excerpt
-          dangerouslySetInnerHTML={{
-            __html: description,
-          }}
-          className="excerpt"
-        />
-      )}
-    </>
-  )}
+	<PostTitle className="post_title">
+		<Link to={url}>{title}</Link>
+	</PostTitle>
+	{overlay == true ? (
+		''
+	) : (
+		<>
+			{' '}
+			{description && (
+				<Excerpt
+					dangerouslySetInnerHTML={{
+						__html: description
+					}}
+					className="excerpt"
+				/>
+			)}
+		</>
+	)}
 
-  <ReadMore className="read_more">
-    <Link to={url}>{overlay == true ? 'Read Story' : 'Read More'}</Link>
-  </ReadMore>
+	<ReadMore className="read_more">
+		<Link to={url}>{overlay == true ? 'Read Story' : 'Read More'}</Link>
+	</ReadMore>
 </PostDetails>
 ```
 

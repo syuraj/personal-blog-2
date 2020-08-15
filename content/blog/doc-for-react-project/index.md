@@ -15,12 +15,12 @@ Donec et lacus sollicitudin, consequat leo sit amet, faucibus quam. Quisque frin
 
 ```js
 function Employee(firstName, lastName) {
-  this.firstName = firstName
-  this.lastName = lastName
+	this.firstName = firstName
+	this.lastName = lastName
 }
 
-Employee.prototype.fullName = function() {
-  return this.firstName + ' ' + this.lastName
+Employee.prototype.fullName = function () {
+	return this.firstName + ' ' + this.lastName
 }
 
 var employee1 = new Employee('Martin', 'Roy')

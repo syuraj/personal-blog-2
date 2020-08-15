@@ -11,12 +11,12 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 ```js
 function Employee(firstName, lastName) {
-  this.firstName = firstName
-  this.lastName = lastName
+	this.firstName = firstName
+	this.lastName = lastName
 }
 
-Employee.prototype.fullName = function() {
-  return this.firstName + ' ' + this.lastName
+Employee.prototype.fullName = function () {
+	return this.firstName + ' ' + this.lastName
 }
 
 var employee1 = new Employee('Martin', 'Roy')

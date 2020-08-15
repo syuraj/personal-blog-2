@@ -40,11 +40,11 @@ simplify documentation writing.
 import Typography from 'typography'
 
 const typography = new Typography({
-  baseFontSize: '18px',
-  baseLineHeight: 1.666,
-  headerFontFamily: ['Avenir Next', 'Helvetica Neue', 'Arial', 'sans-serif'],
-  bodyFontFamily: ['Georgia', 'serif'],
-  // See below for the full list of options.
+	baseFontSize: '18px',
+	baseLineHeight: 1.666,
+	headerFontFamily: ['Avenir Next', 'Helvetica Neue', 'Arial', 'sans-serif'],
+	bodyFontFamily: ['Georgia', 'serif']
+	// See below for the full list of options.
 })
 
 // Output CSS as string.
@@ -58,7 +58,7 @@ typography.injectStyles()
 ```html
 <h1>Sample JavaScript</h1>
 <div class="gatsby-highlight">
-  <pre class="language-jsx">
+	<pre class="language-jsx">
     <code>
       <!-- Embedded content here ... -->
     </code>
@@ -67,7 +67,7 @@ typography.injectStyles()
 
 <h1>Sample HTML</h1>
 <div class="gatsby-highlight">
-  <pre class="language-html">
+	<pre class="language-html">
     <code>
       <!-- Embedded content here ... -->
     </code>
@@ -82,19 +82,19 @@ if (rows == '' || rows == null) rows = 10
 if (cols == '' || cols == null) cols = 10
 createTable(rows, cols)
 function createTable(rows, cols) {
-  var j = 1
-  var output = "<table border='1' width='500' cellspacing='0'cellpadding='5'>"
-  for (i = 1; i <= rows; i++) {
-    output = output + '<tr>'
-    while (j <= cols) {
-      output = output + '<td>' + i * j + '</td>'
-      j = j + 1
-    }
-    output = output + '</tr>'
-    j = 1
-  }
-  output = output + '</table>'
-  document.write(output)
+	var j = 1
+	var output = "<table border='1' width='500' cellspacing='0'cellpadding='5'>"
+	for (i = 1; i <= rows; i++) {
+		output = output + '<tr>'
+		while (j <= cols) {
+			output = output + '<td>' + i * j + '</td>'
+			j = j + 1
+		}
+		output = output + '</tr>'
+		j = 1
+	}
+	output = output + '</table>'
+	document.write(output)
 }
 ```
 
@@ -127,10 +127,10 @@ A bullet list:
 
 will render into HTML as:
 
-- Fruit
-  - Orange
-  - Pear
-- Cake
+-   Fruit
+    -   Orange
+    -   Pear
+-   Cake
 
 The second level items (above Orange, Pear) must be indented with more
 spaces than the item they are nested under. Above 2 spaces were used.
@@ -149,8 +149,8 @@ A numbered list:
 will render into HTML as:
 
 1. Fruit
-   1. Orange
-   2. Pear
+    1. Orange
+    2. Pear
 2. Cake
 
 ### Blockquotes

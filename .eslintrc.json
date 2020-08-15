@@ -4,9 +4,7 @@
 		"node": true,
 		"jest": true
 	},
-	"extends": [
-		"plugin:prettier/recommended",
-	],
+	"extends": ["plugin:prettier/recommended"],
 	"globals": {
 		"Atomics": "readonly",
 		"SharedArrayBuffer": "readonly",
@@ -20,10 +18,7 @@
 		"ecmaVersion": 2018,
 		"sourceType": "module"
 	},
-	"plugins": [
-		"react",
-		"prettier"
-	],
+	"plugins": ["react", "prettier"],
 	"rules": {
 		"semi": "off",
 		"indent": [
