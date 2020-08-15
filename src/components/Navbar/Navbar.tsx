@@ -65,6 +65,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ className, ...props }) =
 				<Logo>
 					<Link to="/">
 						<LogoImage />
+						<span>Suraj</span>
 					</Link>
 				</Logo>
 				<MenuWrapper>

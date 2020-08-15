@@ -40,6 +40,16 @@ export const Logo = styled.div`
 		max-width: 100%;
 		height: auto;
 	}
+	a {
+		display: flex;
+		align-items: center;
+
+		span {
+			margin-left: 5px;
+			font-size: 22px;
+			font-weight: 400;
+		}
+	}
 `
 
 export const MenuWrapper = styled.div`
